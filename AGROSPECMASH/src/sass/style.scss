@@ -1,0 +1,18 @@
+@import './base/_normalize.scss';
+@import './base/_container.scss';
+@import './base/_mixins.scss';
+@import './base/_variables.scss';
+
+@import './blocks/header/header.scss';
+@import './blocks/button/button.scss';
+@import './blocks/products/products.scss';
+
+* {
+    font-family: 'Manrope';
+}
+
+.gold-line {
+    height: 5px;
+    width: 290px;
+    background-color: yellow;
+}

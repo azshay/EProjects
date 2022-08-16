@@ -1,0 +1,106 @@
+.header {
+    padding-top: 34px;
+    background: url("../img/header__bg.jpg") no-repeat right top;
+    background-color: #f9f9f9;
+
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        width: 221px;
+        height: 44px;
+        object-fit: cover;
+
+    }
+
+    &__right {
+        display: flex;
+    }
+
+    &__links {
+        display: flex;
+        align-items: center;
+    }
+
+    &__link {
+         font-weight: 400;
+         font-size: 12px;
+         margin-right: 34px;
+         color: #415360;
+         position: relative;
+
+         &:last-child {
+             margin-right: 48px;
+         }
+
+         &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            transform: rotate(45deg);
+            width: 4px;
+            height: 1px;
+            background: #415360;
+            right: -9px;
+            top: 50%;
+            border-radius: 10px;
+         }
+
+         &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            transform: rotate(-45deg);
+            width: 4px;
+            height: 1px;
+            background: #415360;
+            right: -11.5px;
+            top: 50%;
+            border-radius: 10px;
+         }
+    }
+
+    &__descr {
+        margin-top: 100px;
+
+        h1 {
+            font-size: 42px;
+            color: #415360;
+            font-weight: 900;
+        }
+
+        h3 {
+            font-size: 18px;
+            color: #474747;
+            font-weight: 400;
+        }
+    }
+
+    &__images {
+        display: flex;
+        max-width: 100%;
+        justify-content: space-between;
+        margin-top: 120px;
+    }
+
+    &__imgWithPoint {
+        position: relative;
+    }
+
+    &__points {
+        position: absolute;
+        right: -170px;
+        bottom: -65px;
+        z-index: 1;
+    }
+
+    &__img {
+        max-width: 100%;
+        max-height: 540px;
+        object-fit: cover;
+        filter: drop-shadow(2px 4px 6px rgba(27, 34, 63, 0.5));
+        border-radius: 0px 4px 4px 0px;
+    }
+}
