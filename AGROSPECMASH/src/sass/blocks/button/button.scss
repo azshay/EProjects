@@ -29,4 +29,23 @@
 			margin-right: 16px;
 		}
 	}
+
+	&__request {
+		margin-top: 30px;
+		background: #fdec21;
+		border-radius: 12px;
+		width: 235px;
+		padding: 16px 0;
+		font-weight: 800;
+		font-size: 16px;
+		line-height: 22px;
+		color: #415360;
+		display: flex;
+		justify-content: center;
+	}
+
+	&__footer {
+		background: #fdec21;
+		color: #415360;
+	}
 }

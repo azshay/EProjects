@@ -1,0 +1,59 @@
+.stages {
+	padding-bottom: 120px;
+
+	&__block {
+		background: #415360;
+		border-radius: 12px;
+		max-width: 570px;
+		padding: 28px 26px;
+		position: relative;
+
+		&_skip {
+			grid-column: 1 / 3;
+			margin-right: 40px;
+		}
+	}
+
+	&__wrapper {
+		margin-top: 32px;
+		display: grid;
+		grid-template: repeat(2, 170px 40px) 170px / 570px 40px 570px;
+	}
+
+	&__number {
+		position: absolute;
+		top: 9px;
+		right: 26px;
+		font-weight: 400;
+		font-size: 43px;
+		line-height: 52px;
+		color: #ffffff;
+		opacity: 0.14;
+	}
+
+	&__name {
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 27px;
+		color: #ffffff;
+	}
+
+	&__descr {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 25px;
+		color: #ffffff;
+		opacity: 0.8;
+		margin-top: 14px;
+	}
+
+	&__svg {
+		grid-column: 1 / 3;
+		margin-right: 40px;
+	}
+
+	svg {
+		align-self: center;
+		justify-self: center;
+	}
+}

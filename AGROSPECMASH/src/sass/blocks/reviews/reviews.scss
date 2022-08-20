@@ -1,0 +1,57 @@
+.reviews {
+	padding: 30px 0 50px 0;
+	background-color: #415360;
+
+	&__header {
+		color: #ffffff;
+	}
+
+	&__descr {
+		font-size: 18px;
+		color: #ffffff;
+		opacity: 0.6;
+
+		margin-top: 10px;
+	}
+
+	&__slider {
+		margin-top: 24px;
+		position: relative;
+
+		&-content {
+			display: grid;
+			grid-template-columns: repeat(4, 270px);
+			justify-content: space-between;
+		}
+
+		&-img {
+			border-radius: 12px;
+			width: 270px;
+			height: 382px;
+			object-fit: cover;
+		}
+	}
+
+	&__button {
+		width: 55px;
+		height: 55px;
+		position: absolute;
+		background: rgba(253, 236, 33, 0.54);
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		&_left {
+			top: 50%;
+			transform: translateY(-50%);
+			left: -27.5px;
+		}
+
+		&_right {
+			top: 50%;
+			transform: translateY(-50%);
+			right: -27.5px;
+		}
+	}
+}

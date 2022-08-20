@@ -1,19 +1,46 @@
-@import './base/_normalize.scss';
-@import './base/_container.scss';
-@import './base/_mixins.scss';
-@import './base/_variables.scss';
+@import "./base/_normalize.scss";
+@import "./base/_container.scss";
+@import "./base/_mixins.scss";
+@import "./base/_variables.scss";
 
-@import './blocks/header/header.scss';
-@import './blocks/button/button.scss';
-@import './blocks/products/products.scss';
+@import "./blocks/header/header.scss";
+@import "./blocks/button/button.scss";
+@import "./blocks/products/products.scss";
+@import "./blocks/reviews/reviews.scss";
+@import "./blocks/geography/geography.scss";
+@import "./blocks/advantages/advantages.scss";
+@import "./blocks/achievements/achievements.scss";
+@import "./blocks/stages/stages.scss";
+@import "./blocks/certificate/certificate.scss";
+@import "./blocks/customers/customers.scss";
+@import "./blocks/request/request.scss";
+@import "./blocks/footer/footer.scss";
 
 * {
-    font-family: 'Manrope';
+	font-family: "Manrope";
 }
 
 .gold-line {
-    height: 5px;
-    width: 290px;
-    background-color: yellow;
-    border-radius: 5px;
+	height: 5px;
+	width: 290px;
+	background-color: yellow;
+	border-radius: 5px;
+}
+
+.header42px {
+	font-weight: 800;
+	font-size: 42px;
+	margin-top: 10px;
+}
+
+.header-text {
+	font-weight: 400;
+	font-size: 18px;
+	color: #474747;
+	opacity: 0.6;
+	margin-top: 10px;
+}
+
+hr {
+	border: 1px solid #dfdfdf;
 }
