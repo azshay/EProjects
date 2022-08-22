@@ -1,0 +1,31 @@
+@media (max-width: 1439px) {
+	.header {
+		background-size: 430px;
+		background-position-y: 185px;
+
+		&__menu {
+			align-items: center;
+		}
+
+		&__logo {
+			max-width: 111px;
+			max-height: 22px;
+		}
+
+		&__images {
+			margin-top: 31px;
+			grid-template: auto / 442px 303px;
+		}
+
+		&__img:last-child {
+			margin-top: 70px;
+			padding-right: 42px;
+		}
+
+		&__points {
+			width: 138px;
+			bottom: 0;
+			left: 320px;
+		}
+	}
+}

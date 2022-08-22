@@ -49,3 +49,11 @@
 		color: #415360;
 	}
 }
+
+@media (max-width: 1439px) {
+	.button {
+		&__header {
+			padding: 8px;
+		}
+	}
+}

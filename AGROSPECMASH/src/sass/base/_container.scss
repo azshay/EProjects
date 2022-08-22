@@ -1,3 +1,9 @@
 .container {
-    padding: 0 calc(50% - 600px); // 1920px - 1200px
+	padding: 0 calc(50% - 600px); // 1920px - 1200px
+}
+
+@media (max-width: 1439px) {
+	.container {
+		padding: 0 calc(50% - 340px);
+	}
 }
