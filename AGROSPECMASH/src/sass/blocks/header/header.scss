@@ -83,15 +83,16 @@
 		justify-content: space-between;
 		margin-top: 120px;
 		grid-template: 540px / auto auto;
-	}
-
-	&__imgWithPoint {
 		position: relative;
 	}
 
+	// &__imgWithPoint {
+	// 	position: relative;
+	// }
+
 	&__points {
 		position: absolute;
-		right: -170px;
+		left: 880px;
 		bottom: -65px;
 		z-index: 1;
 	}

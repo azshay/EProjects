@@ -17,6 +17,11 @@
 			grid-template: auto / 442px 303px;
 		}
 
+		&__img:first-child {
+			z-index: 1;
+			position: relative;
+		}
+
 		&__img:last-child {
 			margin-top: 70px;
 			padding-right: 42px;
@@ -24,8 +29,114 @@
 
 		&__points {
 			width: 138px;
-			bottom: 0;
+			bottom: 50px;
+			z-index: 0;
 			left: 320px;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.header {
+		&__links {
+			display: none;
+		}
+
+		&__logo {
+			max-width: 172px;
+			max-height: 34px;
+		}
+
+		&__descr {
+			h3 {
+				margin-top: 32px;
+				width: 290px;
+			}
+		}
+
+		&__images {
+			grid-template: auto / 100%;
+		}
+
+		&__imgWithPoint {
+			max-width: 100%;
+			width: 100%;
+			.header__img {
+				width: 100%;
+			}
+		}
+
+		&__img:last-child {
+			position: absolute;
+			width: 230px;
+			left: 20px;
+			margin-top: 0;
+			bottom: -50px;
+			z-index: 1;
+		}
+
+		&__points {
+			left: 140px;
+			bottom: -50px;
+			z-index: 1;
+		}
+	}
+}
+
+@media (max-width: 575px) {
+	.header {
+		&__descr {
+			h1 {
+				font-weight: 800;
+				font-size: 32px;
+				line-height: 44px;
+			}
+
+			h3 {
+				margin-top: 100px;
+				width: 290px;
+			}
+		}
+
+		&__img:last-child {
+			bottom: -50px;
+			width: 141px;
+			z-index: 1;
+		}
+
+		&__points {
+			left: 40px;
+			bottom: -50px;
+			z-index: 1;
+		}
+	}
+}
+
+@media (min-width: 400px) and (max-width: 575px) {
+	.header {
+		&__descr {
+			h1 {
+				font-weight: 800;
+				font-size: 32px;
+				line-height: 44px;
+			}
+
+			h3 {
+				margin-top: 100px;
+				width: 290px;
+			}
+		}
+
+		&__img:last-child {
+			bottom: -50px;
+			width: 230px;
+			z-index: 1;
+		}
+
+		&__points {
+			left: 130px;
+			bottom: -50px;
+			z-index: 1;
 		}
 	}
 }
