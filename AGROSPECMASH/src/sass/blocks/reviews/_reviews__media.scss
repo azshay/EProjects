@@ -1,0 +1,31 @@
+@media (max-width: 1439px) {
+	.reviews {
+		overflow: hidden;
+
+		&__slider {
+			&-content {
+				column-gap: 40px;
+			}
+		}
+
+		&__button {
+			display: none;
+		}
+	}
+}
+
+@media (max-width: 400px) {
+	.reviews {
+		&__slider {
+			&-content {
+				column-gap: 20px;
+				grid-template-columns: repeat(4, 162px);
+			}
+
+			&-img {
+				width: 162px;
+				height: 228px;
+			}
+		}
+	}
+}

@@ -9,8 +9,10 @@
 @import "./blocks/products/products.scss";
 @import "./blocks/products/_products_media.scss";
 @import "./blocks/reviews/reviews.scss";
+@import "./blocks/reviews/_reviews__media.scss";
 @import "./blocks/geography/geography.scss";
 @import "./blocks/advantages/advantages.scss";
+@import "./blocks/advantages/_advantages_media.scss";
 @import "./blocks/achievements/achievements.scss";
 @import "./blocks/stages/stages.scss";
 @import "./blocks/certificate/certificate.scss";
@@ -19,30 +21,41 @@
 @import "./blocks/footer/footer.scss";
 
 * {
-    font-family: "Manrope";
+	font-family: "Manrope";
 }
 
 .gold-line {
-    height: 5px;
-    width: 290px;
-    background-color: yellow;
-    border-radius: 5px;
+	height: 5px;
+	width: 290px;
+	background-color: yellow;
+	border-radius: 5px;
 }
 
 .header42px {
-    font-weight: 800;
-    font-size: 42px;
-    margin-top: 10px;
+	font-weight: 800;
+	font-size: 42px;
+	margin-top: 10px;
 }
 
 .header-text {
-    font-weight: 400;
-    font-size: 18px;
-    color: #474747;
-    opacity: 0.6;
-    margin-top: 10px;
+	font-weight: 400;
+	font-size: 18px;
+	color: #474747;
+	opacity: 0.6;
+	margin-top: 10px;
 }
 
 hr {
-    border: 1px solid #dfdfdf;
+	border: 1px solid #dfdfdf;
+}
+
+@media (max-width: 575px) {
+	.header42px {
+		font-size: 28px;
+		line-height: 38px;
+	}
+
+	.gold-line {
+		width: 150px;
+	}
 }

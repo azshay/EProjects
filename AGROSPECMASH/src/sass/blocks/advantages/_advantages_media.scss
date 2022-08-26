@@ -1,0 +1,39 @@
+@media (max-width: 1439px) {
+	.advantages {
+		&__wrapper {
+			display: grid;
+			justify-content: start;
+			gap: 50px;
+			grid-template: repeat(2, 63px) / repeat(2, 256px);
+		}
+	}
+}
+
+@media (max-width: 575px) {
+	.advantages {
+		&__wrapper {
+			grid-template: repeat(4, 49px) / 1fr;
+			gap: 12px;
+			margin-top: 22px;
+		}
+
+		&__text {
+			font-size: 14px;
+			line-height: 19px;
+		}
+
+		&__block {
+			align-items: center;
+
+			&-img {
+				width: 49px;
+				height: 49px;
+
+				svg {
+					width: 26px;
+					height: 26px;
+				}
+			}
+		}
+	}
+}
