@@ -1,0 +1,46 @@
+@media (max-width: 1439px) {
+    .stages {
+        &__wrapper {
+            grid-template: repeat(2, 220px 40px) 220px / 332px 20px 332px;
+
+            svg {
+                max-width: 18px;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 767px) {
+    .stages {
+        &__wrapper {
+            grid-template: repeat(6, auto) / auto;
+        }
+
+        svg {
+            display: none;
+        }
+
+        &__block {
+            max-width: none;
+
+            &:not(:first-child) {
+                margin-top: 20px;
+            }
+
+            &_skip {
+                grid-column: auto;
+                margin-right: 0;
+                grid-row: 6 / 7;
+            }
+
+            &_fourth {
+                grid-row: 4 / 5;
+            }
+        }
+
+        &__number {
+            right: 5px;
+        }
+    }
+}
