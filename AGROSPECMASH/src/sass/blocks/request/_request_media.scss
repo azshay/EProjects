@@ -1,0 +1,41 @@
+@media (max-width: 1439px) {
+	.request {
+		&__form {
+			grid-template: auto / 310px minmax(350px, auto);
+			justify-content: space-between;
+
+			&-descr {
+				justify-content: space-between;
+			}
+		}
+
+		&__header {
+			&_tablet {
+				display: block;
+				margin-bottom: 40px;
+			}
+
+			&_desktop {
+				display: none;
+			}
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.request {
+		&__form {
+			grid-template: auto / auto;
+			justify-content: space-between;
+
+			&-descr {
+				margin-top: 22px;
+			}
+
+			&-photo {
+				order: -1;
+				height: 280px;
+			}
+		}
+	}
+}
